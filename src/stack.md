@@ -13,7 +13,7 @@ stack.push(2);
 const s = stack.pop();
 ```
 
-#### 案例
+#### 应用
 
 - js 的函数调用堆栈
 

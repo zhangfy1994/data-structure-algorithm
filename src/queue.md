@@ -13,7 +13,7 @@ queue.push(2);
 const s = queue.shift();
 ```
 
-#### 案例
+#### 应用
 
 - js 异步任务队列
 

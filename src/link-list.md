@@ -37,9 +37,21 @@ b2.next = c;
 b.next = c;
 ```
 
-#### 案例
+#### 应用
 
 - react 中的 fiber 结构，js 中的原型链
+- 通过数组 key 获取深层数据
+
+```js
+const obj = { a: { b: { c: 1 } } };
+const keys = ["a", "b", "c"];
+
+let p = obj;
+keys.forEach((key) => {
+  p = p[key];
+});
+return p; // p = 1
+```
 
 #### leetcode 练习
 
