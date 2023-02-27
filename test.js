@@ -1,26 +1,10 @@
-Array.prototype.binarySearch = function (item) {
-  let start = 0;
-  let end = this.length;
-  while (start < end) {
-    const mid = Math.floor((start + end) / 2);
-    if (this[mid] > item) {
-      end = mid - 1;
-    } else if (this[mid] < item) {
-      start = mid + 1;
-    } else {
-      return mid;
-    }
-  }
-
-  return -1;
-};
-
-const arr = [];
-for (let i = 0; i < 5; i++) {
-  arr.push(Math.floor(Math.random() * 100));
+function out(outparam1, outparam2) {
+  console.log(outparam1, outparam2);
+  inner("3");
 }
 
-const now = Date.now();
-console.log([1, 2, 3, 4].binarySearch(0));
+function inner(innerparam) {
+  console.log("innerparam", innerparam);
+}
 
-console.log("time: ", Date.now() - now);
+out(1, 2);
